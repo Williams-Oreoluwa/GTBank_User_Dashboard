@@ -1,0 +1,360 @@
+
+@font-face {
+  font-family: regular;
+  src: url('/FONTS/Alkatra-Regular.ttf');
+}
+*{
+  font-family: regular;
+}
+.dashboard-figures {
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.figures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.first-figure {
+  position: relative;
+  width: 100%;
+}
+.circular-figure {
+  width: 100%;
+}
+
+.components-wrapper {
+  display: flex;
+
+  justify-content: right;
+
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.second-figure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 120%;
+  height: 50%;
+  border: 2px solid #dcdcdd;
+  display: flex;
+  border-radius: 5px;
+}
+.col-text {
+  width: 3rem;
+  height: 1.4rem;
+  background: #4ace4f26 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.col-text h3 {
+  font-size: 0.6rem;
+  padding-bottom: 0.5rem;
+}
+.col-data {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.col-image {
+  width: 2rem;
+  height: 2rem;
+  background: #552bcc26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: flex;
+}
+
+.progres-data {
+  display: grid;
+  place-items: center;
+}
+.progress-text {
+  position: absolute;
+  top: 4.5rem;
+  left: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-data-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.headset-img {
+  padding: 0.5rem 0.5rem;
+  background: #552bcc26;
+  border-radius: 50%;
+}
+.dashboard-values{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+
+.card-value h3 {
+  width: 70%;
+  height: 20%;
+  background: #4ace4f26 15%;
+  font-size: 12px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar-side{
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    width: 100%;
+    height: 60vh;
+}
+.socials{
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap:1.5rem;
+}
+.container-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.menu-items{
+  border: none;
+}
+.profile-name{
+  position: relative;
+  top: -.7rem;
+}
+.profile-name h6{
+  font-size: .8rem;
+}
+
+
+@media screen and (max-width: 1273px) {
+  .card-value h3 {
+    width: 115%;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 1206px) {
+  .card-value h3 {
+    width: 120%;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .card-data-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .card-value h3 {
+    width: 60%;
+    height: 20%;
+  }
+
+}
+@media screen and (max-width: 1080px) {
+  .card-data-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .card-value h3 {
+    width: 90%;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+    .dashboard-values{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }    
+
+}
+/* @media screen and (max-width: 768px) {
+  .dashboard-values{
+      position: relative;
+      right: -2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+  }
+  .socials{
+    display: grid;
+    grid-template-columns: none;
+ 
+}
+
+
+} */
+
+@media screen and (max-width: 720px) {
+    .dashboard-values{
+        position: relative;
+        right: -2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+
+  }
+
+  @media screen and (max-width: 715px) {
+    .dashboard-values{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;
+    }
+
+
+
+  }
+  @media screen and (max-width: 575px) {
+    .dashboard-values{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;
+    }
+    .socials{
+      position: relative;
+      right: -4rem;
+      display: grid;
+      grid-template-columns: none;
+      place-items: center;
+    }  
+
+
+
+  }
+  @media screen and (max-width: 550px) {
+    .dashboard-values{
+        position: relative;
+        right: -1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;
+    }
+    .socials{
+        display: grid;
+        grid-template-columns: none;
+     
+    }
+
+
+  }
+
+
+
+
+  @media screen and (max-width: 530px) {
+    .dashboard-values{
+        position: relative;
+        right: -6.5rem;
+        display: grid;
+        grid-template-columns: none;
+        gap: 1rem;
+        place-items: center;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 482px) {
+    .dashboard-values{
+        position: relative;
+        right: -4rem;
+        display: grid;
+        grid-template-columns: none;
+        gap: 1rem;
+        place-items: center;
+    }
+    .socials{
+      position: relative;
+      right: -2rem;
+      display: grid;
+      grid-template-columns: none;
+      place-items: center;
+    }  
+
+
+
+  }
+  @media screen and (max-width: 422px) {
+    .dashboard-values{
+        position: relative;
+        right: -2rem;
+      
+    }
+    .socials{
+      position: relative;
+      right: 0rem;
+      display: grid;
+      grid-template-columns: none;
+      place-items: center;
+    } 
+
+
+
+  }
+  @media screen and (max-width: 400px) {
+    .dashboard-values{
+       
+        right: -1.6rem;
+      
+    }
+    .socials{
+      position: relative;
+      right: 1.6rem;
+      display: grid;
+      grid-template-columns: none;
+      place-items: center;
+    } 
+
+
+
+  }
+
+  @media screen and (max-width: 282px) {
+    .dashboard-values{
+        
+        right: 1rem;
+      
+    }
+    .socials{
+      position: relative;
+      right: 2rem;
+      display: grid;
+      grid-template-columns: none;
+      place-items: center;
+    } 
+
+
+
+  }
+
