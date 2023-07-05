@@ -238,7 +238,7 @@ const Home: React.FC = () => {
                 <IonButtons slot="start">
                   <IonMenuButton color={"dark"}></IonMenuButton>
                 </IonButtons>
-                <IonSearchbar slot="end" style={{ width: "17rem" }} />
+                <IonSearchbar slot="end" style={{ width: "17rem" }} placeholder='Search a subject'/>
               </IonToolbar>
               <section className="dashboard-figures">
                 <IonGrid>
