@@ -380,7 +380,7 @@ const Home: React.FC = () => {
                           <div className="progress-bar">
                             <IonCard style={{ width: "100%" }}>
                               <IonCardContent>
-                                <h3>Reasons for Request</h3>
+                                <h3 style={{color:'black', fontSize:'1.5rem', paddingBottom:'2rem'}}>Reasons for Request</h3>
                                 <br />
                                 <div
                                   className="progress-details"
@@ -517,7 +517,7 @@ const Home: React.FC = () => {
                           <IonCard>
                             <IonCardContent>
                               <div className="title">
-                                <h3>Best Care Staff</h3>
+                                <h3 style={{color:'black', fontSize:'1.5rem', paddingBottom:'2rem'}}>Best Care Staff</h3>
                                 {people.map((person, index) => {
                                   const { name, img, ratings } = person;
                                   return (
